@@ -8,10 +8,12 @@
 
 ### Cons
 1. Nat and host only networking and it does not support bridged networking.
-    - However, port forwarding is possible. 
+    - [However, port forwarding may be possible.](https://cwienczek.com/2017/09/reaching-minikube-from-other-devices/)
 2. Requires access to public internet to download dependencies
 3. Conflicts with out Mac Watcher dev environment
-4. Officially not production ready
+    - breakes kubectl
+4. Not considered production ready by most
 
 ### Upgradeability
 - Persistant volumes are mapped to directories inside the Minikube VM. <-- TODO: Test if data persists after restarting and upgrading Minikube
+    - It appears that is possible to mount a directory on the host machine to the 
