@@ -18,9 +18,8 @@
 
 ### Upgradeability
 - Persistant volumes are mapped to directories inside the Minikube VM.
-    - It appears that is possible to mount a directory on the host machine to the 
-        - However, this may be a problem. 
+    - It appears that is possible to mount a directory on the host machine to the
+        - However, this may be a problem.
         - ![Host Sharing Daemon](imgs/minikube_vm_host_dir.png "host to VM dir sharing")
         - However, it could be mitigated using `&`
-
-
+        - **Command:** `minikube mount ~/temp/minikube/:/host`
