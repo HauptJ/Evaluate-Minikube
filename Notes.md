@@ -17,3 +17,5 @@
 ### Upgradeability
 - Persistant volumes are mapped to directories inside the Minikube VM. <-- TODO: Test if data persists after restarting and upgrading Minikube
     - It appears that is possible to mount a directory on the host machine to the 
+        - However, this may be a problem.
+
