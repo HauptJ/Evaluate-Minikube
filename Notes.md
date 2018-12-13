@@ -19,6 +19,8 @@
 5. Can't port forward reserved ports 0 - 1024 even with sudo
     - Must use non reserved ports > 1024
     - ![Port 88](imgs/MinikubePort88.png "Minikube Port 88")
+6. It is a VM, so a HyperVisor is required to run it. 
+    - Problematic if you are trying to run it on a VM IaaS platform such as EC2 due to nested virtualization
 
 ### Upgradeability
 - Persistant volumes are mapped to directories inside the Minikube VM.
@@ -29,4 +31,4 @@
         - **Command:** `minikube mount ~/temp/minikube/:/host`
 
 ### Overall
-- It just feels like a dev tool instead of something you would use in production.
+- After using it for a while, it just feels like a dev tool instead of something you would use in production. 
